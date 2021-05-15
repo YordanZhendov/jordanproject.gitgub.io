@@ -366,6 +366,7 @@ ul {
     margin-left: 1200px;
   }
   #calendar{
+    position: absolute;
     margin-top: -50%;
   }
   
