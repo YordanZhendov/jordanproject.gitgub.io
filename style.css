@@ -1,0 +1,134 @@
+html{
+    background-color: rgb(255, 250, 205,0.8);
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 1800px;
+    margin: auto;
+    position: relative;
+    background-color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+input{
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    font-size: 100%;
+    font-weight: lighter;
+}
+label{
+    font-size: 100%;
+    padding-left: 5%;
+}
+/* HEADER */
+header{
+    background-color: white;
+    display: flex;
+}
+header .headright{
+  display: flex;
+  text-align: right;
+  margin-top: auto;
+  margin-left: auto;
+  
+}
+header .headleft{
+  padding-left: 5%;
+  text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        display: block;
+    }
+    header .headright{
+        padding-left: 5%;
+    }   
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: rgb(71, 57, 57);
+}
+.barfields{
+    display: flex;
+    padding-left: 20%;
+    padding-top: 1%;
+    list-style-type: none;
+    background-color: rgb(200, 226, 255,0.5);
+    padding-bottom: 1%;
+    border: 5px solid white;
+}
+.bar{
+    padding: 1% 6% 1% 6%;
+    
+    background-color: rgb(227, 245, 178);
+    border: 5px solid rgb(243, 250, 224);
+    border-radius: 25%;
+    letter-spacing: 2px;
+}
+.bar:hover{
+    background-color: white;
+}
+@media screen and (max-width: 900px) {
+    .barfields{
+        display: block;
+        padding: 1% 6% 1% 6%;
+    }
+}
+
+/* LOGIN */
+.formlogin{
+    width: 30%;
+    background-color: white;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    border-radius: 20%;
+    padding-left: 5%;
+}
+.row .col-75{
+    width: 90%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+/* REGISTER */
+
+.registerimage{
+        background-image: url("/fotos/register.jpg");      
+        min-height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: none;
+}
+
+.registerform {
+    position: absolute;
+    right: 0;
+    padding: 10%;
+    max-width: 400px;
+    padding: 16px;
+    background-color: rgb(200, 226, 255,0.8);
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+  }
+  .registerform input{
+      display: block;
+  }
+
+  /* FOOTER */
+  footer {
+    left: 0;
+    bottom: 0;
+    max-width: 1800px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 100%;
+  }
