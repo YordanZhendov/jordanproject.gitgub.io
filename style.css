@@ -96,7 +96,7 @@ header .headleft{
 /* REGISTER */
 
 .registerimage{
-        background-image: url("/fotos/register.jpg");      
+        background-image: url("./fotos/register.jpg");      
         min-height: 400px;
         background-position: center;
         background-repeat: no-repeat;
