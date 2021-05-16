@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="headleft">
+            <div class="head" id="number"><i class="material-icons">phone</i> <a href=""> Call us: +2(40)233 4434
+                </a></div>
+            <div class="head" id="email"><i class="material-icons">email</i> <a href=""> Email:
+                    gerosd.ivanove@abv.bg </a></div>
+        </div>
+        <div class="headright">
+            <div class="head" id="serachicon">
+                <i class="material-icons">search</i>
+            </div>
+            <div class="head">
+                <input type="search" name="search" id="search" placeholder="Searching...">
+            </div>
+        </div>
+        <canvas id="canvas" width="80" height="80" style="background-color:white"></canvas>
+
+    </header>
+    <main class="maincontainer">
+        <div class="navbar">
+            <ul class="barfields">
+                <li class="bar"><a onclick="closeForm()" href="index.html">Home</a></li>
+                <li class="bar"><a href="#news">News</a></li>
+                <li class="bar">
+                    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                        <!-- <div class="dropdown-content">
+                            <a href="#">Buy</a>
+                            <a href="#">Sell</a>
+                            <a href="#">Meet</a>
+                        </div> -->
+                </li>
+            </ul>
+        </div>
+        <form action="" class="formlogin">
+            <div class="row">
+                <div>
+                    <label class="col-25" for="fname">First Name</label>
+                </div>
+                <div>
+                    <input class="col-75" type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label class="col-25" for="lname">Password</label>
+                </div>
+                <div >
+                    <input class="col-75" type="password" id="lname" name="lastname" placeholder="Your password.." required>
+                </div>
+            </div>
+            <div class="row add">
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </div>
+            <div class="row">
+                <button  onclick="openForm()">Sign In</button>
+            </div>
+            <div class="row">
+                <button class="register" onclick="openForm()">Register</button>
+            </div>
+        </form>
+        <div class="registerimage">
+            <form action="/action_page.php" id="myForm" class="registerform">
+                <h1>Pleasure ot Meet You.. </h1>
+                
+                <label for="email"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" name="fregname" required>
+                <label for="email"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Last Name" name="lregname" required>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <div class="row add">
+                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                </div>
+                <button   onclick="closeForm()">Cancel</button>
+                <button   >Register</button>
+            </form>
+        </div>
+        
+        <!-- <div id="fotochecker">
+            <div id="checker">
+                <ul id="fotobox">
+                    <li class="fotoli"><input type="checkbox" id="cb1" />
+                        <label for="cb1"><img onmouseup="check1()" src="./fotos/goldena.jpg" /></label>
+                    </li>
+                    <li class="fotoli"><input type="checkbox" id="cb2" />
+                        <label for="cb2"><img onmouseup="check2()" src="./fotos/dakel.jpg" /></label>
+                    </li>
+                    <li class="fotoli"><input type="checkbox" id="cb3" />
+                        <label for="cb3"><img onmouseup="check3()" src="./fotos/Pitbull.jpg" /></label>
+                    </li>
+                    <li class="fotoli"><input type="checkbox" id="cb4" />
+                        <label for="cb4"><img onmouseup="check4()" src="./fotos/nemska-ovcharka.jpg" /></label>
+                    </li>
+                </ul>
+            </div>
+            <div id="ch1Info" class="infoFotos">
+                <p>To resize: Click and drag the bottom right corner of this div element.</p>
+            </div>
+            <div id="ch2Info" class="infoFotos">
+                <p>To resize: Click and drag the bottom right corner of this div element.</p>
+            </div>
+            <div id="ch3Info" class="infoFotos">
+                <p>To resize: Click and drag the bottom right corner of this div element.</p>
+            </div>
+            <div id="ch4Info" class="infoFotos">
+                <p>To resize: Click and drag the bottom right corner of this div element.</p>
+            </div>
+        </div> -->
+        <div class="vide">
+            <p class="videos">FUNNIEST VIDEOS:</p>
+            <ul class="vedostable">
+                <li class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/2xoWR06YFg8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></li>
+                <li class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/2xoWR06YFg8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></li>
+                <li class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/2xoWR06YFg8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></li>
+                <li class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/2xoWR06YFg8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></li>
+                
+              
+            </ul>
+        </div>
+    </main>
+    
+    <footer>© Copyright JD Zhendov 2021</footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/clock.js"></script>
+        
+</body>
+
+</html>
